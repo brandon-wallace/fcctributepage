@@ -7,16 +7,20 @@ body {
 html {
   --red: #fc3c30;
   --blue: #30BCEd;
+  --redish: hsla(0, 84%, 76%, 0.8);
 }
 
 body {
   margin: 0;
   color: #191919;
   font-family: 'Open Sans', sans-serif;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8D99AE), color-stop(#EDF2F4), color-stop(#EDF2F4), color-stop(#EDF2F4), color-stop(#EDF2F4), to(#8D99AE));
-  background-image: -webkit-linear-gradient(#8D99AE, #EDF2F4, #EDF2F4, #EDF2F4, #EDF2F4, #8D99AE);
-  background-image: -o-linear-gradient(#8D99AE, #EDF2F4, #EDF2F4, #EDF2F4, #EDF2F4, #8D99AE);
-  background-image: linear-gradient(#8D99AE, #EDF2F4, #EDF2F4, #EDF2F4, #EDF2F4, #8D99AE);
+  background: -webkit-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
+            -webkit-linear-gradient(323deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
+            -webkit-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  background: -o-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
+            -o-linear-gradient(323deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
+            -o-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  background: linear-gradient(217deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
+            linear-gradient(127deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
+            linear-gradient(336deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);
 }
 
 a {

@@ -16,9 +16,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: -webkit-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
             -webkit-linear-gradient(323deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
-            -webkit-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  background: -o-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
+            -webkit-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  
+  background: -o-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
             -o-linear-gradient(323deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
-            -o-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  background: linear-gradient(217deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
+            -o-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  
+  background: linear-gradient(217deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
             linear-gradient(127deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
             linear-gradient(336deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);
 }
@@ -48,9 +50,9 @@ a {
   text-transform: uppercase;
   color: hsl(200, 87%, 35%);
   text-shadow: 2px 2px 0 var(--red),
-               -2px -2px 0 var(--red),
-               2px -2px 0 var(--red),
-               -2px 2px 0 var(--red);
+             -2px -2px 0 var(--red),
+              2px -2px 0 var(--red),
+              -2px 2px 0 var(--red);
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -68,15 +70,21 @@ a {
           justify-content: center;
 }
 
+.img-container {
+  width: 100%;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  background-image: linear-gradient(to left bottom, var(--red), var(--blue), var(--red), var(--blue), var(--red), var(--blue), var(--red), var(--blue));
+}
+
 #image {
   width: 100%;
   height: auto;
+  margin: .5rem;
   display: none;
-  margin: 0 auto;
   max-width: 1012px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 4px hsl(10, 97%, 59%);
-          box-shadow: 0 0 0 4px hsl(10, 97%, 59%);
 }
 
 #img-caption {

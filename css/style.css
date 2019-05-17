@@ -1,7 +1,7 @@
 html,
 body {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 html {
@@ -14,15 +14,18 @@ body {
   margin: 0;
   color: #191919;
   font-family: 'Open Sans', sans-serif;
-  background: -webkit-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
-            -webkit-linear-gradient(323deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
-            -webkit-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  
-  background: -o-linear-gradient(233deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
-            -o-linear-gradient(323deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
-            -o-linear-gradient(114deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);  
-  background: linear-gradient(217deg, hsla(0, 1%, 72%, 0.5), hsla(0, 1%, 72%, 0) 70.71%),
-            linear-gradient(127deg, hsla(197, 100%, 73%, 0.5), hsla(197, 100%, 73%, 0) 70.71%),
-            linear-gradient(336deg, hsla(1, 100%, 71%, 0.5), hsla(1, 100%, 71%, 0) 70.71%);
+  background-image: -webkit-gradient(linear, left top, right top, from(hsla(6.7, 5.3%, 26.1%, 0.4)), 
+              color-stop(5%, hsla(6.7, 5.3%, 26.1%, 0)), color-stop(hsla(6.7, 5.3%, 26.1%, 0.4)), 
+              color-stop(95%, hsla(6.7, 5.3%, 26.1%, 0)), to(hsla(6.7, 5.3%, 26.1%, 0.4)));
+              background-image: -webkit-linear-gradient(left, hsla(6.7, 5.3%, 26.1%, 0.4), 
+              hsla(6.7, 5.3%, 26.1%, 0) 5%, hsla(6.7, 5.3%, 26.1%, 0.4), 
+              hsla(6.7, 5.3%, 26.1%, 0) 95%, hsla(6.7, 5.3%, 26.1%, 0.4));
+              background-image: -o-linear-gradient(left, hsla(6.7, 5.3%, 26.1%, 0.4), 
+              hsla(6.7, 5.3%, 26.1%, 0) 5%, hsla(6.7, 5.3%, 26.1%, 0.4), 
+              hsla(6.7, 5.3%, 26.1%, 0) 95%, hsla(6.7, 5.3%, 26.1%, 0.4));
+              background-image: linear-gradient(left, hsla(6.7, 5.3%, 26.1%, 0.4), 
+              hsla(6.7, 5.3%, 26.1%, 0) 5%, hsla(6.7, 5.3%, 26.1%, 0.4), 
+              hsla(6.7, 5.3%, 26.1%, 0) 95%, hsla(6.7, 5.3%, 26.1%, 0.4));
 }
 
 a {
@@ -73,15 +76,18 @@ a {
 .img-container {
   width: 100%;
   display: flex;
+  margin: 0 auto;
+  max-width: 1012px;
   border-radius: 50%;
   justify-content: center;
-  background-image: linear-gradient(to left bottom, var(--red), var(--blue), var(--red), var(--blue), var(--red), var(--blue), var(--red), var(--blue));
+  background-image: linear-gradient(to left bottom, var(--red), var(--blue),
+  var(--red), var(--blue), var(--red), var(--blue), var(--red), var(--blue));
 }
 
 #image {
   width: 100%;
   height: auto;
-  margin: .5rem;
+  margin: 1rem;
   display: none;
   max-width: 1012px;
   border-radius: 50%;
@@ -90,7 +96,7 @@ a {
 #img-caption {
   display: none;
   font-weight: 900;
-  margin-top: .5em;
+  margin-top: .4em;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -204,7 +210,7 @@ footer {
 
 @media only screen and (min-width: 1000px) {
   #title {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 }
 

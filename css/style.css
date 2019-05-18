@@ -30,6 +30,7 @@ body {
 
 a {
   text-decoration: none;
+  color: hsl(200, 87%, 35%);
 }
 
 .text-center {
